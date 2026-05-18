@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+    <!-- 音轨选择按钮区域 (占20%) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="16"
+        android:background="#f0f0f0">
+
+        <Button
+            android:id="@+id/track_btn_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="1"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/track_btn_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="2"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/track_btn_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="3"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/track_btn_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="4"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/track_btn_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="5"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/track_btn_6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="6"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/track_btn_7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="7"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/track_btn_8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="8"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/track_btn_9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="9"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/track_btn_10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="10"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/track_btn_11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="11"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/track_btn_12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="12"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/track_btn_13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="13"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/track_btn_14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="14"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/track_btn_15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="15"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/track_btn_16"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="16"
+            android:background="?attr/selectableItemBackground" />
+    </LinearLayout>
+
+    <!-- 简谱编辑区域 (占50%) -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 音轨1文本框 -->
+            <EditText
+                android:id="@+id/notation_editor_1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:visibility="visible"
+                android:background="#f8f8f8"
+                android:hint="音轨1简谱，例如：[0,220,G大调]5-351'--76-1'-5---5-123-212--5-351'--76-1'-5---5-234--7.1--" />
+
+            <!-- 音轨2文本框 -->
+            <EditText
+                android:id="@+id/notation_editor_2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:background="#f8f8f8"
+                android:hint="音轨2简谱，例如：[40,60,C大调]1-3-5-1---3-5-1---" />
+
+            <!-- 音轨3文本框 -->
+            <EditText
+                android:id="@+id/notation_editor_3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:background="#f8f8f8"
+                android:hint="音轨3简谱，例如：[115,240,C大调]0-0-0-0-0-0-0-0-" />
+
+            <!-- 音轨4文本框 -->
+            <EditText
+                android:id="@+id/notation_editor_4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:background="#f8f8f8"
+                android:hint="音轨4简谱" />
+
+            <!-- 音轨5文本框 -->
+            <EditText
+                android:id="@+id/notation_editor_5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:background="#f8f8f8"
+                android:hint="音轨5简谱" />
+
+            <!-- 音轨6文本框 -->
+            <EditText
+                android:id="@+id/notation_editor_6"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:background="#f8f8f8"
+                android:hint="音轨6简谱" />
+
+            <!-- 音轨7文本框 -->
+            <EditText
+                android:id="@+id/notation_editor_7"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:background="#f8f8f8"
+                android:hint="音轨7简谱" />
+
+            <!-- 音轨8文本框 -->
+            <EditText
+                android:id="@+id/notation_editor_8"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:background="#f8f8f8"
+                android:hint="音轨8简谱" />
+
+            <!-- 音轨9文本框 -->
+            <EditText
+                android:id="@+id/notation_editor_9"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:background="#f8f8f8"
+                android:hint="音轨9简谱" />
+
+            <!-- 音轨10文本框 -->
+            <EditText
+                android:id="@+id/notation_editor_10"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:background="#f8f8f8"
+                android:hint="音轨10简谱" />
+
+            <!-- 音轨11文本框 -->
+            <EditText
+                android:id="@+id/notation_editor_11"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:background="#f8f8f8"
+                android:hint="音轨11简谱" />
+
+            <!-- 音轨12文本框 -->
+            <EditText
+                android:id="@+id/notation_editor_12"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:background="#f8f8f8"
+                android:hint="音轨12简谱" />
+
+            <!-- 音轨13文本框 -->
+            <EditText
+                android:id="@+id/notation_editor_13"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:background="#f8f8f8"
+                android:hint="音轨13简谱" />
+
+            <!-- 音轨14文本框 -->
+            <EditText
+                android:id="@+id/notation_editor_14"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:background="#f8f8f8"
+                android:hint="音轨14简谱" />
+
+            <!-- 音轨15文本框 -->
+            <EditText
+                android:id="@+id/notation_editor_15"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:background="#f8f8f8"
+                android:hint="音轨15简谱" />
+
+            <!-- 音轨16文本框 -->
+            <EditText
+                android:id="@+id/notation_editor_16"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:background="#f8f8f8"
+                android:hint="音轨16简谱" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 控制按钮区域 (占30%) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:gravity="center"
+        android:background="#e0e0e0"
+        android:padding="8dp">
+
+        <!-- 播放按钮 - 使用系统图标 -->
+        <ImageButton
+            android:id="@+id/midieditor_play"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_media_play" />
+
+        <!-- 停止按钮 - 使用系统图标 -->
+        <ImageButton
+            android:id="@+id/midieditor_stop"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_media_pause" />
+
+        <!-- 循环播放复选框 -->
+        <CheckBox
+            android:id="@+id/loop_checkbox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="循环播放"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/export_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="导出MIDI"
+            android:layout_margin="8dp"/>
+
+        <!-- 空位占位 -->
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
